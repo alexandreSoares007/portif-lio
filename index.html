@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre Lopes Soares | Portfólio</title>
+    <link rel="stylesheet" href="xande.js">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -172,13 +173,10 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3> Senac Araraquara</h3>
-                        <h4>Analista de Marketing em mídias Sociais.</h4>
-                        <p class="timeline-period"> Previsão de início 6 de Julho</p>
-                        <p>Entender conceito, tendências, inovações e os avanços tecnológicos em marketing,Identificar
-                            público de interesse,<br> definir personas e identidade da marca,Criar e monitorar plano de
-                            marketing e conteúdo para mídias sociais,Utilizar a ferramenta Canva para suporte no design
-                            de postagens</p>
+                        <h3> Fatec </h3>
+                        <h4>Trade Marketing: cenário da competitividade</h4>
+                        <p class="timeline-period"> Mini Curso Concluído </p>
+                        <p>Entender conceito, tendências, inovações e os avanços tecnológicos em marketing.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -441,17 +439,16 @@
             </div>
         </div>
     </footer>
-
     <script>
         // Theme toggle
         const themeToggle = document.querySelector('.theme-toggle');
         const htmlElement = document.documentElement;
-
+        
         // Load saved theme from localStorage
         const savedTheme = localStorage.getItem('theme') || 'light';
         htmlElement.setAttribute('data-theme', savedTheme);
         updateThemeIcon(savedTheme);
-
+        
         themeToggle.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -459,7 +456,7 @@
             localStorage.setItem('theme', newTheme);
             updateThemeIcon(newTheme);
         });
-
+        
         function updateThemeIcon(theme) {
             const sunIcon = document.querySelector('.theme-icon.sun');
             const moonIcon = document.querySelector('.theme-icon.moon');
@@ -471,16 +468,16 @@
                 moonIcon.style.display = 'block';
             }
         }
-
+        
         // Mobile menu toggle
         const navToggle = document.querySelector('.nav-toggle');
         const navMenu = document.querySelector('.nav-menu');
-
+        
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
-
+        
         // Close menu when clicking on a link
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
@@ -488,7 +485,7 @@
                 navToggle.classList.remove('active');
             });
         });
-
+        
         // Header scroll effect
         const header = document.querySelector('.header');
         window.addEventListener('scroll', () => {
@@ -498,7 +495,11 @@
                 header.classList.remove('scrolled');
             }
         });
-    </script>
+        </script>
+
+
+    
+    
 </body>
 
 </html>
